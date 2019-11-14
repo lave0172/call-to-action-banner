@@ -36,7 +36,7 @@ body {
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .content-image {
@@ -45,16 +45,21 @@ body {
 
 .content-text {
   max-width: 60%;
+  padding-right: 25px;
 }
 
 h2 {
   font-family: "Roboto Condensed";
   font-size: 3rem;
+  margin: 0;
+  padding-right: 50px;
 }
 
 p {
   font-family: Roboto;
   font-size: 1.5rem;
+  line-height: 1.5;
+  margin: .5em;
 }
 
 .btn {
@@ -68,6 +73,7 @@ p {
   display: inline-block;
   border: 3px solid #333;
   font-family: Roboto;
+  line-height: 1.5;
 }
 
 .btn-big {
