@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.banner {
+  overflow: hidden;
+  max-height: 500px;
+  position: relative;
+}
+
+.img-flex {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.banner div {
+  z-index: 2;
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  max-width: 45em;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-image {
+  max-width: 33%;
+  /* margin: 20px; */
+}
+
+.content-text {
+  max-width: 60%;
+  /* margin: 20px; */
+}
+
+h2 {
+  font-family: "Roboto Condensed";
+  font-size: 3rem;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 1.5rem;
+}
+
+.btn {
+  padding: .4em .75em .3em;
+  border-radius: 8px;
+  border-width: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  background-color: #333;
+  display: inline-block;
+  border: 3px solid #333;
+  font-family: Roboto;
+}
+
+.btn-big {
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: #000;
+  border: 3px solid #000;
+}
